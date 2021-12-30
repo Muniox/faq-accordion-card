@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.card {
+    max-width: 327px;
+    background: white;
+    border-radius: 25px;
+}
