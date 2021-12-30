@@ -9,6 +9,7 @@
 }
 
 body{
+    font-family: 'Kumbh Sans';
     display: grid;
     justify-content: center;
     align-content: center;
@@ -21,7 +22,53 @@ body{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .card {
+    min-height: 535px;
     max-width: 327px;
     background: white;
     border-radius: 25px;
+    position: relative;
+
+    &__image {
+        width:237px;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    &__image-patern {
+        display: block;
+        margin: 0 auto;
+        scale: 1;
+        animation: scale 3s ease-in-out infinite;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -60%);
+    }
+
+    50% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(-50%, -60%);
+    }
+}
+
+@keyframes scale {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 0.9;
+    }
+
+    100% {
+        scale: 1;
+    }
 }
