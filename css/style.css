@@ -55,9 +55,30 @@ body {
 .card__image-patern {
   display: block;
   margin: 0 auto;
-  scale: 1;
+  width: 240px;
+  height: 104px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-animation: scale 3s ease-in-out infinite;
           animation: scale 3s ease-in-out infinite;
+}
+
+.card__description {
+  padding: 25px;
+}
+
+.card__title {
+  font-size: 28px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.card__question {
+  margin-bottom: 10px;
+}
+
+.card__answer {
+  display: none;
 }
 
 @-webkit-keyframes float {
@@ -92,25 +113,31 @@ body {
 
 @-webkit-keyframes scale {
   0% {
-    scale: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    scale: 0.9;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
-    scale: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes scale {
   0% {
-    scale: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    scale: 0.9;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
-    scale: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=style.css.map */

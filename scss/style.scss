@@ -40,8 +40,28 @@ body{
     &__image-patern {
         display: block;
         margin: 0 auto;
-        scale: 1;
+        width: 240px;
+        height: 104px;
+        transform: scale(1);
         animation: scale 3s ease-in-out infinite;
+    }
+
+    &__description {
+        padding: 25px;
+    }
+
+    &__title {
+        font-size: 28px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    &__question {
+        margin-bottom: 10px;
+    }
+
+    &__answer {
+        display: none;
     }
 }
 
@@ -61,14 +81,14 @@ body{
 
 @keyframes scale {
     0% {
-        scale: 1;
+        transform: scale(1);
     }
 
     50% {
-        scale: 0.9;
+        transform: scale(0.9);
     }
 
     100% {
-        scale: 1;
+        transform: scale(1);
     }
 }
