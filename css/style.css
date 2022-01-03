@@ -92,6 +92,11 @@ body {
   font-weight: 700;
 }
 
+.card__question--active::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .card__question::after {
   content: '';
   position: absolute;

@@ -5,6 +5,7 @@ for (let i=0;i<accordionElement.length;i++) {
         this.classList.toggle('card__question--active');
 
 
+
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
           panel.style.display = "none";

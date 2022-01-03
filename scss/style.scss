@@ -82,6 +82,11 @@ body{
         &--active {
             font-weight: 700;
         }
+
+        &--active::after {
+            transform: rotate(90deg);
+        }
+        
     }
 
     &__question::after {
