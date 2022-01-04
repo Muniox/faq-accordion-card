@@ -104,6 +104,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 15px;
+  color: #4a4b5e;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -127,6 +128,7 @@ body {
 
 .card__answer {
   display: block;
+  color: #787887;
   font-size: 12px;
   padding-right: 20px;
   max-height: 0;
