@@ -33,7 +33,7 @@ body{
 .card {
     margin-top: 150px;
     min-height: 535px;
-    max-width: 327px;
+    width: 327px;
     background: white;
     border-radius: 25px;
     position: relative;
@@ -73,23 +73,21 @@ body{
     &__question::after {
         content: url(.././images/icon-arrow-down.svg);
         margin-left: 10px;
-        // height: 7px;
-        // width: 10px;
         transform: rotate(0);
-        transition: 1s;
+        transition: 0.5s;
+        align-self: center;
     }
 
     &__question {
         display: flex;
         justify-content: space-between;
-        align-content: stretch;
+        align-content: center;
         width: 100%;
         font-size: 12px;
         font-weight: 400;
-        // gap: 60px;
         margin-bottom: 15px;
         cursor: pointer;
-        transition: 0.4s;
+        transition: 0.5s;
 
         &--active {
             font-weight: 700;
@@ -99,7 +97,11 @@ body{
             transform: rotate(180deg);
             transition: 1s;
         }
-        
+    }
+
+    &__question:hover {
+        color: #F47B56;
+        font-weight: 700;
     }
 
     // &__question::after:hover {
@@ -107,13 +109,13 @@ body{
     // }
 
     &__answer {
-        display: none;
+        display: block;
         font-size: 12px;
         // padding-bottom: 15px;
-        // padding-right: 20px;
+        padding-right: 20px;
         // margin-bottom: 15px;
         max-height: 0;
-        transition: max-height 1s ease-out;
+        transition: max-height 0.5s ease-out;
         overflow: hidden;
     }
 }

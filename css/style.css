@@ -37,7 +37,7 @@ body {
 .card {
   margin-top: 150px;
   min-height: 535px;
-  max-width: 327px;
+  width: 327px;
   background: white;
   border-radius: 25px;
   position: relative;
@@ -84,8 +84,11 @@ body {
   margin-left: 10px;
   -webkit-transform: rotate(0);
           transform: rotate(0);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .card__question {
@@ -95,15 +98,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 100%;
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 15px;
   cursor: pointer;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .card__question--active {
@@ -117,12 +120,18 @@ body {
   transition: 1s;
 }
 
+.card__question:hover {
+  color: #F47B56;
+  font-weight: 700;
+}
+
 .card__answer {
-  display: none;
+  display: block;
   font-size: 12px;
+  padding-right: 20px;
   max-height: 0;
-  -webkit-transition: max-height 1s ease-out;
-  transition: max-height 1s ease-out;
+  -webkit-transition: max-height 0.5s ease-out;
+  transition: max-height 0.5s ease-out;
   overflow: hidden;
 }
 
