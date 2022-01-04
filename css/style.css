@@ -35,9 +35,9 @@ body {
 }
 
 .card {
-  margin-top: 150px;
+  margin-top: 110px;
   min-height: 535px;
-  width: 327px;
+  max-width: 327px;
   background: white;
   border-radius: 25px;
   position: relative;
@@ -101,7 +101,7 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   width: 100%;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   margin-bottom: 15px;
   color: #4a4b5e;

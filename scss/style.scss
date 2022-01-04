@@ -31,9 +31,9 @@ body{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .card {
-    margin-top: 150px;
+    margin-top: 110px;
     min-height: 535px;
-    width: 327px;
+    max-width: 327px;
     background: white;
     border-radius: 25px;
     position: relative;
@@ -83,7 +83,7 @@ body{
         justify-content: space-between;
         align-content: center;
         width: 100%;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 400;
         margin-bottom: 15px;
         color: $very-dark-grayish-blue;
