@@ -70,7 +70,7 @@ body {
 
 .card__title {
   font-size: 28px;
-  margin: 20px 0;
+  margin: 8px 0 39px 0;
   text-align: center;
   font-weight: 700;
   color: #4a4b5e;
@@ -105,7 +105,7 @@ body {
   width: 100%;
   font-size: 13px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: #4a4b5e;
   cursor: pointer;
   -webkit-transition: 0.5s;
