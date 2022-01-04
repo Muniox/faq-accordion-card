@@ -105,7 +105,7 @@ body {
   width: 100%;
   font-size: 13px;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #4a4b5e;
   cursor: pointer;
   -webkit-transition: 0.5s;
@@ -132,6 +132,7 @@ body {
   display: block;
   color: #787887;
   font-size: 12px;
+  line-height: 18px;
   padding-right: 20px;
   max-height: 0;
   -webkit-transition: max-height 0.5s ease-out;

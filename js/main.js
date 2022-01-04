@@ -11,7 +11,7 @@ for (let i=0;i<accordionElement.length;i++) {
             panel.style.marginBottom = 0 + "px";
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
-            panel.style.marginBottom = 15 + "px";
+            panel.style.marginBottom = 20 + "px";
         }
     })
     
