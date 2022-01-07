@@ -40,7 +40,7 @@ body{
     border-radius: 25px;
     position: relative;
 
-    &__image {
+    &__image-mobile {
         width:237px;
         position: absolute;
         top: 0%;
@@ -49,7 +49,7 @@ body{
         animation: float 3s ease-in-out infinite;
     }
 
-    &__image-patern {
+    &__image-patern-mobile {
         display: block;
         margin: 0 auto;
         transform: scale(1);
@@ -151,5 +151,42 @@ body{
 
     100% {
         transform: scale(1);
+    }
+}
+
+
+@media (min-width: 950px) {
+    
+    .card {
+        display: flex;
+        max-width: 920px;
+        flex-direction: row;
+        overflow: hidden;
+        max-height: 509px;
+        margin-top: 0;
+
+        &__image-mobile {
+            display: none;
+        }
+
+        &__image-patern-mobile {
+            display: none;
+        }
+
+        &__image-desktop {
+            position: absolute;
+            width: 472px; 
+            height: 359px;
+            left: -80px;
+            bottom: 80px;
+        }
+
+        &__image-patern-desktop {
+            position: absolute;
+            top: -265px;
+            left: -575px;
+            width: 966px; 
+            height: 945px;
+        }
     }
 }
