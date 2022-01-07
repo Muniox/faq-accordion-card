@@ -31,9 +31,11 @@ body{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .card {
-    margin-top: 150px;
+    margin-top: 110px;
+    margin-bottom: 20px;
     min-height: 535px;
     max-width: 327px;
+    min-width: 245px;
     background: white;
     border-radius: 25px;
     position: relative;
@@ -60,9 +62,10 @@ body{
 
     &__title {
         font-size: 28px;
-        margin: 20px 0;
+        margin: 8px 0 39px 0;
         text-align: center;
         font-weight: 700;
+        color: $very-dark-grayish-blue;
     }
 
     &__description-line {
@@ -73,23 +76,22 @@ body{
     &__question::after {
         content: url(.././images/icon-arrow-down.svg);
         margin-left: 10px;
-        // height: 7px;
-        // width: 10px;
         transform: rotate(0);
-        transition: 1s;
+        transition: 0.5s;
+        align-self: center;
     }
 
     &__question {
         display: flex;
         justify-content: space-between;
-        align-content: stretch;
+        align-content: center;
         width: 100%;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 400;
-        // gap: 60px;
-        margin-bottom: 15px;
+        margin-bottom: 16px;
+        color: $very-dark-grayish-blue;
         cursor: pointer;
-        transition: 0.4s;
+        transition: 0.5s;
 
         &--active {
             font-weight: 700;
@@ -99,7 +101,11 @@ body{
             transform: rotate(180deg);
             transition: 1s;
         }
-        
+    }
+
+    &__question:hover {
+        color: #F47B56;
+        font-weight: 700;
     }
 
     // &__question::after:hover {
@@ -107,13 +113,15 @@ body{
     // }
 
     &__answer {
-        display: none;
+        display: block;
+        color: $dark-grayish-blue;
         font-size: 12px;
+        line-height: 18px;
         // padding-bottom: 15px;
-        // padding-right: 20px;
+        padding-right: 20px;
         // margin-bottom: 15px;
         max-height: 0;
-        transition: max-height 1s ease-out;
+        transition: max-height 0.5s ease-out;
         overflow: hidden;
     }
 }
