@@ -43,6 +43,8 @@ body {
   background: white;
   border-radius: 25px;
   position: relative;
+  -webkit-box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+          box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
 }
 
 .card__image-mobile {
@@ -63,6 +65,14 @@ body {
           transform: scale(1);
   -webkit-animation: scale 3s ease-in-out infinite;
           animation: scale 3s ease-in-out infinite;
+}
+
+.card__image-desktop {
+  display: none;
+}
+
+.card__image-patern-desktop {
+  display: none;
 }
 
 .card__description {
@@ -201,19 +211,34 @@ body {
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 400px) {
   .card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 920px;
+    min-width: 920px;
+    min-height: 509px;
+    gap: 86px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     overflow: hidden;
-    max-height: 509px;
     margin-top: 0;
+  }
+  .card__image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    max-width: 389px;
   }
   .card__image-mobile {
     display: none;
@@ -222,18 +247,47 @@ body {
     display: none;
   }
   .card__image-desktop {
+    display: block;
     position: absolute;
     width: 472px;
     height: 359px;
-    left: -80px;
-    bottom: 80px;
+    -webkit-transform: translate(-84px, -10px);
+            transform: translate(-84px, -10px);
+    z-index: 100;
   }
   .card__image-patern-desktop {
+    display: block;
     position: absolute;
-    top: -265px;
-    left: -575px;
+    -webkit-transform: translate(-577px, -80px);
+            transform: translate(-577px, -80px);
     width: 966px;
     height: 945px;
+  }
+  .card__description {
+    padding: 65px 95px 50px 0;
+  }
+  .card__title {
+    font-size: 28px;
+    margin: 0 0 39px 4px;
+    text-align: left;
+    font-weight: 700;
+    color: #4a4b5e;
+  }
+  .card__description-line {
+    border-bottom: 1px solid #e7e7e9;
+    margin-bottom: 15px;
+  }
+  .card__question::after {
+    margin-right: 16px;
+  }
+  .card__question--active::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .card__question-text {
+    margin-left: 4px;
   }
 }
 /*# sourceMappingURL=style.css.map */

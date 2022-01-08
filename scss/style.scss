@@ -39,6 +39,7 @@ body{
     background: white;
     border-radius: 25px;
     position: relative;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
 
     &__image-mobile {
         width:237px;
@@ -54,6 +55,14 @@ body{
         margin: 0 auto;
         transform: scale(1);
         animation: scale 3s ease-in-out infinite;
+    }
+
+    &__image-desktop {
+        display:none
+    }
+
+    &__image-patern-desktop {
+        display:none;
     }
 
     &__description {
@@ -155,15 +164,26 @@ body{
 }
 
 
-@media (min-width: 950px) {
+@media (min-width: 400px) {
     
     .card {
         display: flex;
-        max-width: 920px;
+        min-width: 920px;
+        min-height: 509px;
+        gap: 86px;
+        // max-width: 920px;
+        // max-width: 509px;
         flex-direction: row;
         overflow: hidden;
-        max-height: 509px;
         margin-top: 0;
+
+        &__image-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            max-width: 389px;
+        }
 
         &__image-mobile {
             display: none;
@@ -174,19 +194,73 @@ body{
         }
 
         &__image-desktop {
+            display: block;
             position: absolute;
             width: 472px; 
             height: 359px;
-            left: -80px;
-            bottom: 80px;
+            transform: translate(-84px, -10px);
+            // left: -84px;
+            // bottom: 80px;
+            z-index: 100;
         }
 
         &__image-patern-desktop {
+            display: block;
             position: absolute;
-            top: -265px;
-            left: -575px;
+            transform: translate(-577px, -80px);
+            // top: -295px;
+            // left: -577px;
             width: 966px; 
             height: 945px;
+            // width: 100%; 
+            // height: 100%;
         }
+
+        &__description {
+            padding: 65px 95px 50px 0;
+        }
+    
+        &__title {
+            font-size: 28px;
+            margin: 0 0 39px 4px;
+            text-align: left;
+            font-weight: 700;
+            color: $very-dark-grayish-blue;
+        }
+    
+        &__description-line {
+            border-bottom: 1px solid $Light-grayish-blue;
+            margin-bottom: 15px;
+        }
+    
+        &__question::after {
+            margin-right: 16px;
+        }
+    
+        &__question {
+
+    
+            &--active {
+
+            }
+    
+            &--active::after {
+                transform: rotate(180deg);
+                transition: 1s;
+            }
+        }
+    
+        &__question:hover {
+
+        }
+        
+        &__question-text {
+            margin-left: 4px;
+        }
+
+    
+        &__answer {
+        }
+
     }
 }
